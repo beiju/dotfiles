@@ -56,8 +56,6 @@ fi;
 
 if [[ `hostname` == *deepthought* ]] then;
  	HN="$UN"
-elif [[ `hostname` == *42.beiju.me* ]] then;
-	HN="42"
 else;
 	if [[ -n "$UN" ]] then;
 		UN="$UN@"
