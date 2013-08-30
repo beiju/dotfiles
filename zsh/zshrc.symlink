@@ -38,3 +38,27 @@ do
 done
 
 unset config_files
+
+# Oh-My-Zsh
+
+# Path to your oh-my-zsh configuration.
+ZSH=$HOME/.oh-my-zsh
+
+ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ZSH_THEME="beiju"
+
+plugins=(git textmate ruby)
+
+source $ZSH/oh-my-zsh.sh
+
+# reset ZSH after oh-my-zsh is done
+export ZSH=$HOME/.dotfiles
+
+#!! temporary - this should be moved into the organization scheme
+export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH
+source $HOME/.profile
