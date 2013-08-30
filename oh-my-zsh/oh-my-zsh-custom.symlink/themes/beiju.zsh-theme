@@ -56,11 +56,20 @@ fi;
 
 if [[ `hostname` == *deepthought* ]] then;
  	HN="$UN"
+elif [[ `hostname` == *42.beiju.me* ]] then;
+	HN="42"
 else;
 	if [[ -n "$UN" ]] then;
 		UN="$UN@"
 	fi;
-	HN="$UN%{$fg[yellow]%}%m:"
+	
+	if [[ `hostname` == *42.beiju.me* ]] then;
+		HN_CODE="hactar"
+	else;
+		HN_CODE="%m"
+	fi; 
+	
+	HN="$UN%{$fg[yellow]%}$HN_CODE:"
 fi;
 
 PROMPT="$HN%{$fg[cyan]%}[$(collapsed_wd)% ]%(?.%{$fg[green]%}.%{$fg[red]%})%B%(!.#.$)%b "
