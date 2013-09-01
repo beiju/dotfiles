@@ -22,7 +22,9 @@ collapsed_wd() {
 }
 
 rb_status() {
-  echo "$ZSH_THEME_RUBY_PROMPT_PREFIX`~/.rvm/bin/rvm-prompt | sed "s/ruby-/rb:/;s/-p[0-9]*//;s/@/@$ZSH_THEME_RUBY_PROMPT_INTER/"`$ZSH_THEME_RUBY_PROMPT_SUFFIX"
+	if [ -a "~/.rvm/bin/rvm-prompt" ]; then
+  	echo "$ZSH_THEME_RUBY_PROMPT_PREFIX`~/.rvm/bin/rvm-prompt | sed "s/ruby-/rb:/;s/-p[0-9]*//;s/@/@$ZSH_THEME_RUBY_PROMPT_INTER/"`$ZSH_THEME_RUBY_PROMPT_SUFFIX"
+	fi;
 }
 
 py_status() {
