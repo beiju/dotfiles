@@ -72,4 +72,4 @@ else;
 	HN="$UN%{$fg[yellow]%}$HN_CODE:"
 fi;
 
-PROMPT="$HN%{$fg[cyan]%}[$(collapsed_wd)% ]%(?.%{$fg[green]%}.%{$fg[red]%})%B%(!.#.$)%b "
+PROMPT='$HN%{$fg[cyan]%}[$(collapsed_wd)% ]%(?.%{$fg[green]%}.%{$fg[red]%})%B%(!.#.$)%b '
