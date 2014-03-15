@@ -2,7 +2,7 @@
 export ZSH=$HOME/.dotfiles
 
 # your project folder that we can `c [tab]` to
-export PROJECTS=~/Code
+export PROJECTS=~/Dropbox/Projects
 
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
@@ -55,7 +55,7 @@ ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 # time that oh-my-zsh is loaded.
 ZSH_THEME="beiju"
 
-plugins=(git textmate ruby)
+plugins=(git textmate ruby terminalapp emoji-clock fuck)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -64,4 +64,4 @@ export ZSH=$HOME/.dotfiles
 
 #!! temporary - this should be moved into the organization scheme
 #export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH
-source $HOME/.profile
+#source $HOME/.profile
