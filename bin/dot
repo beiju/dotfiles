@@ -5,6 +5,9 @@
 # `dot` handles installation, updates, things like that. Run it periodically
 # to make sure you're on the latest and greatest.
 
+# Update dotfiles
+cd ~/.dotfiles && git pull
+
 # Set OS X defaults
 $ZSH/osx/set-defaults.sh
 
