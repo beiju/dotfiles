@@ -55,7 +55,7 @@ ZSH_CUSTOM=$HOME/.oh-my-zsh-custom
 # time that oh-my-zsh is loaded.
 ZSH_THEME="beiju"
 
-plugins=(git textmate ruby terminalapp emoji-clock fuck)
+plugins=(git textmate ruby terminalapp emoji-clock fuck zsh-syntax-highlighting) # zsh-syntax-highlighting must be last
 
 source $ZSH/oh-my-zsh.sh
 
@@ -65,3 +65,7 @@ export ZSH=$HOME/.dotfiles
 #!! temporary - this should be moved into the organization scheme
 #export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:$PATH
 #source $HOME/.profile
+
+export iOSOpenDevPath=/opt/iOSOpenDev
+export iOSOpenDevDevice=
+export PATH=/opt/iOSOpenDev/bin:$PATH
